@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #3F4E4F;
+}
+
+@media screen and (min-width: 870px) {
+    li, a, button,h2 {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    h2{
+        font-size: 50px;
+        color: #DCD7C9;
+        background-color: #3F4E4F;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .main{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 100vw;
+        height: 30vw;
+    }
+    .tags{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        background-color: #3F4E4F;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 869px){
+    li, a, button,h2 {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    .tags{
+        display: block;
+    }
+    h2{
+        font-size: 50px;
+        color: #DCD7C9;
+        background-color: #3F4E4F;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .main{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100vw;
+        height: 80%;
+    }
+    .tags{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        background-color: #3F4E4F;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 599px){
+    li, a, button,h2 {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    h2{
+        font-size: 50px;
+        color: #DCD7C9;
+        background-color: #3F4E4F;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .main{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100vw;
+        height: 80%;
+    }
+    .tags{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        background-color: #3F4E4F;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+
+

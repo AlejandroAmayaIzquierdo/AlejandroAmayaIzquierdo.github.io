@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #3F4E4F;
+}
+
+@media screen and (min-width: 870px) {
+    li, a, button {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+        background-color: #2C3639;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .skills-bar{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        left: 50%;
+        width: 600px;
+        transform: translate(-50%,0%);
+        background: #fff;
+        padding: 15px 30px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .skills-bar .bar{
+        background-color: #fff;
+        margin: 20px 0;
+    }
+    .skills-bar .bar:first-child{
+        margin-top: 0px;
+    }
+    .skills-bar .bar .info{
+        background: #fff;
+    }
+    .skills-bar .bar .info span{
+        font-size: 17px;
+        font-weight: 500;
+        background: #fff;
+        opacity: 0;
+        animation: showtext 0.5s 1s linear forwards;
+    }
+    @keyframes showtext {
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    .skills-bar .bar .progress-line{
+        position: relative;
+        height: 10px;
+        width: 100%;
+        background: #f0f0f0;
+        transform: scaleX(0);
+        transform-origin: left;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                        0px 1px rgba(255, 255, 255, 0.8);
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+    }
+    .bar .progress-line span{
+        height: 100%;
+        width: 80%;
+        background: #DCD7C9;
+        position: absolute;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+    @keyframes animate {
+        100%{
+            transform: scaleX(1);
+        }
+        
+    }
+    .progress-line.java span{
+        width: 90%;
+    }
+    .progress-line.python span{
+        width: 70%;
+    }
+    .progress-line.cmasmas span{
+        width: 40%;
+    }
+    .progress-line.sql span{
+        width: 90%;
+    }
+    .bar .progress-line span::before{
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        right: 0%;
+        top: -10px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+    }
+    .bar .progress-line span::after{
+        position: absolute;
+        content: "80%";
+        right: 0;
+        top: -25px;
+        color: #fff;
+        background: #000;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 1px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+
+    }
+    @keyframes showtext2 {
+        100%{
+            opacity: 1;
+        }
+    }
+    .progress-line.java span::after{
+        content: "90%";
+    }
+    .progress-line.python span::after{
+        content: "70%";
+    }
+    .progress-line.cmasmas span::after{
+        content: "40%";
+    }
+    .progress-line.sql span::after{
+        content: "90%";
+    }
+    .text{
+        position: absolute;
+        justify-content: center;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 350px;
+    }
+    .title{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 380px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+        color: #DCD7C9;
+    }
+    .fotos{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(300px,300px));
+        column-gap: 10px;
+        row-gap: 10px;
+
+    }
+    .work{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 869px){
+    li, a, button {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+        background-color: #2C3639;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .skills-bar{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        left: 50%;
+        width: 600px;
+        transform: translate(-50%,0%);
+        background: #fff;
+        padding: 15px 30px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .skills-bar .bar{
+        background-color: #fff;
+        margin: 20px 0;
+    }
+    .skills-bar .bar:first-child{
+        margin-top: 0px;
+    }
+    .skills-bar .bar .info{
+        background: #fff;
+    }
+    .skills-bar .bar .info span{
+        font-size: 17px;
+        font-weight: 500;
+        background: #fff;
+        opacity: 0;
+        animation: showtext 0.5s 1s linear forwards;
+    }
+    @keyframes showtext {
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    .skills-bar .bar .progress-line{
+        position: relative;
+        height: 10px;
+        width: 100%;
+        background: #f0f0f0;
+        transform: scaleX(0);
+        transform-origin: left;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                        0px 1px rgba(255, 255, 255, 0.8);
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+    }
+    .bar .progress-line span{
+        height: 100%;
+        width: 80%;
+        background: #DCD7C9;
+        position: absolute;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+    @keyframes animate {
+        100%{
+            transform: scaleX(1);
+        }
+        
+    }
+    .progress-line.java span{
+        width: 90%;
+    }
+    .progress-line.python span{
+        width: 70%;
+    }
+    .progress-line.cmasmas span{
+        width: 40%;
+    }
+    .progress-line.sql span{
+        width: 90%;
+    }
+    .bar .progress-line span::before{
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        right: 0%;
+        top: -10px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+    }
+    .bar .progress-line span::after{
+        position: absolute;
+        content: "80%";
+        right: 0;
+        top: -25px;
+        color: #fff;
+        background: #000;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 1px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+
+    }
+    @keyframes showtext2 {
+        100%{
+            opacity: 1;
+        }
+    }
+    .progress-line.java span::after{
+        content: "90%";
+    }
+    .progress-line.python span::after{
+        content: "70%";
+    }
+    .progress-line.cmasmas span::after{
+        content: "40%";
+    }
+    .progress-line.sql span::after{
+        content: "90%";
+    }
+    .title{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 380px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+        color: #DCD7C9;
+    }
+    .fotos{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+        column-gap: 10px;
+        row-gap: 10px;
+
+    }
+    .work{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (max-width: 599px){
+    li, a, button {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #DCD7C9;
+        text-decoration: none;
+        background-color: #2C3639;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 2px 2px 20px 1px #333333;
+        background-color: #2C3639;
+    }
+    
+    .logoLink{
+        width: 10%;
+        background-color: #2C3639;
+    }
+    
+    .logo {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li {
+        display: block;
+        padding: 0px 20px;
+        background-color: #2C3639;
+    }
+    
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+        background-color: #2C3639;
+    }
+    .nav_links li a:hover {
+        color: #0088a9;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    .skills-bar{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        left: 50%;
+        width: 300px;
+        transform: translate(-50%,0%);
+        background: #fff;
+        padding: 15px 30px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .skills-bar .bar{
+        background-color: #fff;
+        margin: 20px 0;
+    }
+    .skills-bar .bar:first-child{
+        margin-top: 0px;
+    }
+    .skills-bar .bar .info{
+        background: #fff;
+    }
+    .skills-bar .bar .info span{
+        font-size: 17px;
+        font-weight: 500;
+        background: #fff;
+        opacity: 0;
+        animation: showtext 0.5s 1s linear forwards;
+    }
+    @keyframes showtext {
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    .skills-bar .bar .progress-line{
+        position: relative;
+        height: 10px;
+        width: 100%;
+        background: #f0f0f0;
+        transform: scaleX(0);
+        transform-origin: left;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                        0px 1px rgba(255, 255, 255, 0.8);
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+    }
+    .bar .progress-line span{
+        height: 100%;
+        width: 80%;
+        background: #DCD7C9;
+        position: absolute;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+    @keyframes animate {
+        100%{
+            transform: scaleX(1);
+        }
+        
+    }
+    .progress-line.java span{
+        width: 90%;
+    }
+    .progress-line.python span{
+        width: 70%;
+    }
+    .progress-line.cmasmas span{
+        width: 40%;
+    }
+    .progress-line.sql span{
+        width: 90%;
+    }
+    .bar .progress-line span::before{
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        right: 0%;
+        top: -10px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+    }
+    .bar .progress-line span::after{
+        position: absolute;
+        content: "80%";
+        right: 0;
+        top: -25px;
+        color: #fff;
+        background: #000;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 1px 8px;
+        border-radius: 3px;
+        opacity: 0;
+        animation: showtext2 0.5s 1.5s linear forwards;
+
+    }
+    @keyframes showtext2 {
+        100%{
+            opacity: 1;
+        }
+    }
+    .progress-line.java span::after{
+        content: "90%";
+    }
+    .progress-line.python span::after{
+        content: "70%";
+    }
+    .progress-line.cmasmas span::after{
+        content: "40%";
+    }
+    .progress-line.sql span::after{
+        content: "90%";
+    }
+    .title{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 380px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+        color: #DCD7C9;
+    }
+    .fotos{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+        column-gap: 10px;
+        row-gap: 10px;
+
+    }
+    .work{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+
+
+
