@@ -358,10 +358,10 @@
         width: 70%;
     }
     .progress-line.cmasmas span{
-        width: 40%;
+        width: 50%;
     }
     .progress-line.sql span{
-        width: 90%;
+        width: 40%;
     }
     .bar .progress-line span::before{
         position: absolute;
@@ -404,10 +404,10 @@
         content: "70%";
     }
     .progress-line.cmasmas span::after{
-        content: "40%";
+        content: "50%";
     }
     .progress-line.sql span::after{
-        content: "90%";
+        content: "40%";
     }
     .title{
         position: absolute;
@@ -570,10 +570,10 @@
         width: 70%;
     }
     .progress-line.cmasmas span{
-        width: 40%;
+        width: 50%;
     }
     .progress-line.sql span{
-        width: 90%;
+        width: 40%;
     }
     .bar .progress-line span::before{
         position: absolute;
@@ -616,10 +616,10 @@
         content: "70%";
     }
     .progress-line.cmasmas span::after{
-        content: "40%";
+        content: "50%";
     }
     .progress-line.sql span::after{
-        content: "90%";
+        content: "40%";
     }
     .title{
         position: absolute;
